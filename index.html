@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do | Yash Kumar Saini | 2023</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><img src="logo.png" /> To-Do List</h1>
+      <div class="input-container">
+        <input
+          type="text"
+          placeholder="Add a new task"
+          id="taskInput"
+          onkeypress="if(event.keyCode===13){addTask();}"
+        />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <div class="task-list" id="pendingList"></div>
+      <div class="line"></div>
+      <div class="task-list" id="completedList"></div>
+    </div>
+    <footer class="footer">
+      <a href="https://yashksaini.netlify.app/" target="_blank">YashKS</a>
+      <p>Yash Kumar Saini © All rights reserved.</p>
+      <p>Version 16.11.11</p>
+    </footer>
+    <!-- Version 16.11.11-->
+
+    <!-- Shortable.js -->
+    <script src="shortable.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
